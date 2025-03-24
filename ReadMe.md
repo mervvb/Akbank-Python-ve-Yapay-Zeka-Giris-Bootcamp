@@ -16,20 +16,20 @@ toplu taşıma ağlarında verimli bir yolculuk planlaması sağlar.
 
 **A. Kullanılan Teknolojiler**
 
-1\. [Python 3.12.2]{.underline}
+1\. [Python 3.12.2]
 
-2\. [VS Code (Visual Studio Code)]{.underline}
+2\. [VS Code (Visual Studio Code)]
 
-3\. [Nesne Yönelimli Programlama (OOP)]{.underline}
+3\. [Nesne Yönelimli Programlama (OOP)]
 
 **B. Kullanılan Modüller ve Fonksiyonlar**
 
-1\. [collections]{.underline} modülü, standart veri yapılarına (list,
+1\. [collections] modülü, standart veri yapılarına (list,
 tuple, dict, set) alternatif olarak gelişmiş veri yapıları sağlar. Bu
 projede deque (double-ended queue) ve defaultdict veri yapılarını
 kullandık.
 
--   [deque (double-ended queue]{.underline}), list veri yapısına benzer
+-   [deque (double-ended queue]), list veri yapısına benzer
     ancak ondan çok daha işlevseldir. Hem başa hem de sona ekleme ve
     silme işlemlerini çok daha hızlı gerçekleştirir. Çift uçlu kuyruk
     yapısına sahip olduğu için BFS (Genişlik Öncelikli Arama)
@@ -37,7 +37,7 @@ kullandık.
     veri yapısını kullanarak istasyonlar arasındaki en kısa bağlantı
     yolunu bulduk.
 
--   [defaultdict]{.underline} veri yapısı, normal dict ile benzer
+-   [defaultdict] veri yapısı, normal dict ile benzer
     şekilde çalışır ancak olmayan bir anahtara erişildiğinde hata vermek
     yerine otomatik olarak varsayılan bir değer oluşturur. Projede
     hatlar sözlüğü defaultdict(list) olarak tanımlanarak, yeni bir hat
@@ -45,7 +45,7 @@ kullandık.
     kaldırılmış ve doğrudan istasyon eklenmesi sağlanmıştır. Bu sayede,
     hatlar sözlüğüne ekleme yaparken hata alma riski ortadan kalkmıştır.
 
-2\. [heapq]{.underline} modülü, Python'da öncelik kuyruğu (priority
+2\. [heapq] modülü, Python'da öncelik kuyruğu (priority
 queue) işlemleri için kullanılan bir veri yapısı sağlar. Min-heap
 mantığına dayanan bu yapı, tam bir ikili ağaç (complete binary tree)
 şeklinde düzenlenmiştir ve her düğümün değeri, ebeveyninden büyük
@@ -58,14 +58,14 @@ yollar hızlıca değerlendirilir ve algoritmanın verimliliği artırılır. Bu
 işlemleri gerçekleştirirken modülden heappop(), heappush() fonksiyonları
 kullandık.
 
--   [heappush(heap, item)]{.underline}, bir öğeyi heap'e eklemek için
+-   [heappush(heap, item)], bir öğeyi heap'e eklemek için
     kullanılır. Öğeyi eklerken heap yapısını korur, yani öğeler sıralı
     bir şekilde tutulur.
 
--   [heappop(heap)]{.underline}, heap'ten en küçük öğeyi çıkarır ve
+-   [heappop(heap)], heap'ten en küçük öğeyi çıkarır ve
     döndürür. Bu işlemden sonra heap yapısını yeniden düzenler.
 
-3\. [typing]{.underline} modülü, type hinting (tip ipucu) eklemek için
+3\. [typing] modülü, type hinting (tip ipucu) eklemek için
 kullanılan bir modüldür. Python'da değişkenlerin türünü belirtmeye gerek
 yoktur, ancak daha okunaklı ve hatasız kod yazmak için typing modülü
 kullanılabilir. Böylece veri yapısını takip etmek kolaylaştığından hata
